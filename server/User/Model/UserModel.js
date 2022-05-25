@@ -1,13 +1,17 @@
 //Objeto user
 
 //Impontante >>> atributos de objetos se inicializam com underline "_"
-function User(_Id, _first_name, _last_name, _email, _password, _phone) {
-    this.id = _Id
-    this.first_name = _first_name
-    this.nast_name = _last_name
-    this.email = _email
-    this.password = _password
-    this.phone = _phone
+ function User( Id, first_name, last_name, email, password, phone) {
+    this.id = Id
+    this.first_name = first_name
+    this.nast_name = last_name
+    this.email = email
+    this.password = password
+    this.phone = phone
 }
 
-module.exports = User
+var teste = 'apenas teste'
+
+module.exports = { User, teste } 
+
+//teste = new User('12345', 'fabio')
